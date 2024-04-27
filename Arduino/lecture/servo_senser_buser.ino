@@ -1,5 +1,5 @@
+// 초음파 센서로 물건 접근 인식 -> 조도 센서 빛 감지 체크 -> 모터 작동 -> 모터 작동 끝날시 부저 작동
 #include <Servo.h>
-
 #define trigPin 9
 #define echoPin 10
 #define thresholdDistance 5 // 거리 임계값 (단위: cm)
