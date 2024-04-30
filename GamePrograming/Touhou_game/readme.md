@@ -1,5 +1,6 @@
 구현 사항
 
+[![Video Label](http://img.youtube.com/vi/FXc3nx7F3Xw/0.jpg)](https://youtu.be/FXc3nx7F3Xw)
 - 적 구현
 - 보스 구현
 - 무기 강화(적기 파괴 후 아이템 획득을 통한 강화/상점에서의 강화가 아님)
