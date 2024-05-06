@@ -1,6 +1,6 @@
 크롬 다이노 게임 구현
 
-[![Video Label](http://img.youtube.com/vi/dpkqhkZ8jRw/0.jpg)(https://youtu.be/dpkqhkZ8jRw)
+[![Video Label](http://img.youtube.com/vi/dpkqhkZ8jRw/0.jpg)](https://youtu.be/dpkqhkZ8jRw)
 -C#스크립트 사용
 
 -진행 방향키 좌우를 이용하여 스크롤 속도 조절
