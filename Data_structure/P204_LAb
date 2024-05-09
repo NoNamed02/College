@@ -1,0 +1,60 @@
+/*
+두개의 리스트를 합치는 함수
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+typedef struct Node{
+    char name[100];
+    struct Node *link;
+}Node;
+
+ Node* insert_f(Node* head, char n[]){
+     Node* p = (Node*)malloc(sizeof(Node));
+     strcpy(p->name,n);
+     p->link = head;
+     head = p;
+     return head;
+ }
+
+void print(Node* head){
+    Node* p;
+    for(p=head;p!=NULL;p=p->link)
+        printf("%s -> ", p->name);
+    printf("NULL\n");
+}
+
+Node* concat_list(Node* A, Node* B){
+    Node* p = A;
+    while(p->link != NULL){
+        p = p->link;
+    }
+    p->link = B;
+    return A;
+}
+
+int main(void){
+    Node *A = (Node*)malloc(sizeof(Node));
+    strcpy(A->name,"APPLE");
+    A = insert_f(A,"KIWI");
+    A = insert_f(A,"BANANA");
+    print(A);
+    
+    Node *B = (Node*)malloc(sizeof(Node));
+    strcpy(B->name,"Test1");
+    B = insert_f(B, "Test2");
+    print(B);
+    
+    Node *end = concat_list(A,B);
+    print(end);
+    return 0;
+}
+
+/*
+출력 결과
+BANANA -> KIWI -> APPLE -> NULL
+Test2 -> Test1 -> NULL
+BANANA -> KIWI -> APPLE -> Test2 -> Test1 -> NULL
+*/
