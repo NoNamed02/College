@@ -40,3 +40,10 @@ int main(void){
     
     return 0;
 }
+
+/*
+출력 결과
+APPLE -> NULL
+KIWI -> APPLE -> NULL
+BANANA -> KIWI -> APPLE -> NULL
+*/
