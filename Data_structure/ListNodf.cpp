@@ -7,21 +7,22 @@ typedef struct Node{
     struct Node *link;
 }Node;
 
+/*
 void insert_f(Node* head, int v){
     Node* p = (Node*)malloc(sizeof(Node));
     p->data = v;
     p->link = head;
     head = p;
 }
+*/
 
-/*
 Node* insert_f(Node* head, int v){
     Node* p = (Node*)malloc(sizeof(Node));
     p->data = v;
     p->link = head;
     head = p;
 }
-*/
+
 
 void print(Node* head){
     Node* p;
@@ -30,6 +31,7 @@ void print(Node* head){
     printf("NULL");
 }
 
+/*
 Node* insert(Node* head, int find_data, int v){
     Node* p;
     for(p=head;p!=NULL;p=p->link){
@@ -42,11 +44,28 @@ Node* insert(Node* head, int find_data, int v){
     p->link = p2;
     return head;
 }
+*/
+
+Node* insert(Node* head, Node* pre, int v){
+    Node* p = (Node*)malloc(sizeof(Node));
+    p->data = v;
+    p->link = pre->link;
+    pre->link = p;
+    return head;
+}
 
 Node* delete_f(Node* head){
     Node* re;
     re = head;
-    head = re->link;
+    head = head->link;
+    free(re);
+    return head;
+}
+
+Node* _delete(Node* head, Node* pre){
+    Node* re;
+    re = pre->link;
+    pre->link = re->link;
     free(re);
     return head;
 }
@@ -57,11 +76,15 @@ int main() {
     A->data = 10;
     A->link = NULL;
     
-    insert_f(A, 20);
-    insert_f(A, 30);
-    // A = insert_f(A, 20)
+    //insert_f(A, 20);
+    //insert_f(A, 30);
+    A = insert_f(A, 20);
+    A = insert(A, A->link,30);
     //insert(A,10,50);
     //insert(A,10,60);
+    A = delete_f(A);
+    //A = delete_f(A);
+    A = _delete(A,A);
     
     //A = delete_f(A);
     
