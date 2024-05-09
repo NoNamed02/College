@@ -1,0 +1,100 @@
+// 10. 다음과 같이 단순 연결 리스트의 노드들의 개수를 계산하는 프로그램을 작성해 보자
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node{
+    int data;
+    struct Node *link;
+}Node;
+
+Node* insert_f(Node* head, int v){
+    Node* p = (Node*)malloc(sizeof(Node));
+    p->data = v;
+    p->link = head;
+    head = p;
+}
+
+
+void print(Node* head){
+    Node* p;
+    for(p=head;p!=NULL;p=p->link)
+        printf("%d -> ",p->data);
+    printf("NULL");
+}
+
+
+Node* _insert(Node* head, int find_data, int v){
+    Node* p;
+    for(p=head;p!=NULL;p=p->link){
+        if(p->data = find_data)
+            break;
+    }
+    Node* p2 = (Node*)malloc(sizeof(Node));
+    p2->data = v;
+    p2->link = p->link; 
+    p->link = p2;
+    return head;
+}
+
+
+Node* insert(Node* head, Node* pre, int v){
+    Node* p = (Node*)malloc(sizeof(Node));
+    p->data = v;
+    p->link = pre->link;
+    pre->link = p;
+    return head;
+}
+
+Node* delete_f(Node* head){
+    Node* re;
+    re = head;
+    head = head->link;
+    free(re);
+    return head;
+}
+
+Node* _delete(Node* head, Node* pre){
+    Node* re;
+    re = pre->link;
+    pre->link = re->link;
+    free(re);
+    return head;
+}
+
+int main() {
+    Node* A = NULL;
+    int n = 0;
+    int num[5];
+    printf("노드의 개수 : ");
+    scanf("%d",&n);
+    printf("");
+    for(int i = 0; i<n; i++){
+        int v;
+        printf("노드 #%d 데이터 : ", i+1);
+        scanf("%d",&v);
+        printf("");
+        num[n-i] = v;
+    }
+    for(int i = 0; i<n ; i++){
+        A = insert_f(A, num[i+1]);
+    }
+    ////////////////////////////
+    int count = 0;
+    Node* p = A;
+    for(p;p!=NULL;p=p->link){
+        count++;
+    }
+    free(p);
+    printf("연결 리스트 노드의 개수 = %d", count);
+    ////////////////////////////
+    return 0;
+}
+
+/*
+출력 결과
+노드의 개수 : 3
+노드 #1 데이터 : 5
+노드 #2 데이터 : 6
+노드 #3 데이터 : 7
+연결 리스트 노드의 개수 = 3
+*/
