@@ -1,0 +1,38 @@
+/*
+단어를 저장하는 연결 리스트 제작
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+typedef struct Node{
+    char name[100];
+    struct Node *link;
+}Node;
+
+void print(Node* head){
+    Node* p;
+    for(p=head;p!=NULL;p=p->link)
+        printf("%s -> ", p->name);
+    printf("NULL\n");
+}
+
+int main(void){
+    Node *A = (Node*)malloc(sizeof(Node));
+    strcpy(A->name,"APPLE");
+    A->link = NULL;
+    print(A);
+    
+    Node *B = (Node*)malloc(sizeof(Node));
+    strcpy(B->name,"KIWI");
+    B->link = A;
+    print(B);
+    
+    Node *C= (Node*)malloc(sizeof(Node));
+    strcpy(C->name,"BANANA");
+    C->link = B;
+    print(C);
+    
+    return 0;
+}
