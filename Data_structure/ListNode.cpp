@@ -31,8 +31,8 @@ void print(Node* head){
     printf("NULL");
 }
 
-/*
-Node* insert(Node* head, int find_data, int v){
+
+Node* _insert(Node* head, int find_data, int v){
     Node* p;
     for(p=head;p!=NULL;p=p->link){
         if(p->data = find_data)
@@ -44,7 +44,7 @@ Node* insert(Node* head, int find_data, int v){
     p->link = p2;
     return head;
 }
-*/
+
 
 Node* insert(Node* head, Node* pre, int v){
     Node* p = (Node*)malloc(sizeof(Node));
@@ -78,13 +78,13 @@ int main() {
     
     //insert_f(A, 20);
     //insert_f(A, 30);
-    A = insert_f(A, 20);
-    A = insert(A, A->link,30);
-    //insert(A,10,50);
-    //insert(A,10,60);
-    A = delete_f(A);
+    //A = insert_f(A, 20);
+   // A = insert(A, A->link,30);
+    _insert(A,10,50);
+    _insert(A,10,60);
     //A = delete_f(A);
-    A = _delete(A,A);
+    A = delete_f(A);
+    //A = _delete(A,A);
     
     //A = delete_f(A);
     
