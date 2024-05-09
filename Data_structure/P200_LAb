@@ -11,6 +11,14 @@ typedef struct Node{
     struct Node *link;
 }Node;
 
+ Node* insert_f(Node* head, char n[]){
+     Node* p = (Node*)malloc(sizeof(Node));
+     strcpy(p->name,n);
+     p->link = head;
+     head = p;
+     return head;
+ }
+
 void print(Node* head){
     Node* p;
     for(p=head;p!=NULL;p=p->link)
@@ -24,15 +32,11 @@ int main(void){
     A->link = NULL;
     print(A);
     
-    Node *B = (Node*)malloc(sizeof(Node));
-    strcpy(B->name,"KIWI");
-    B->link = A;
-    print(B);
+    A = insert_f(A,"KIWI");
+    print(A);
     
-    Node *C= (Node*)malloc(sizeof(Node));
-    strcpy(C->name,"BANANA");
-    C->link = B;
-    print(C);
+    A = insert_f(A,"BANANA");
+    print(A);
     
     return 0;
 }
