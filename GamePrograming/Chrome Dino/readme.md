@@ -1,6 +1,6 @@
 크롬 다이노 게임 구현
 
-[![Video Label](http://img.youtube.com/vi/dpkqhkZ8jRw/0.jpg)](https://youtu.be/dpkqhkZ8jRw)
+[![Video Label](http://img.youtube.com/vi/E5K-7z6Qm4Q/0.jpg)](https://youtu.be/E5K-7z6Qm4Q)
 
 
 -C#스크립트 사용
