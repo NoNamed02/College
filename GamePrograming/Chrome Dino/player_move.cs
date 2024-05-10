@@ -48,20 +48,20 @@ public class player_move : MonoBehaviour
         
         if(pos_check == 0){
             if(transform.position.x >= -6.5f){
-                transform.position += new Vector3(-0.01f, 0f, 0f);
+                transform.position += new Vector3(-0.1f, 0f, 0f);
             }
             if(transform.position.x < -6.5f){
-                transform.position += new Vector3(0.01f, 0f, 0f);
+                transform.position += new Vector3(0.1f, 0f, 0f);
             }
         }
         if(pos_check == 1){
             if(transform.position.x <= -5.5f){
-                transform.position += new Vector3(0.01f, 0f, 0f);
+                transform.position += new Vector3(0.1f, 0f, 0f);
             }
         }
         if(pos_check == -1){
             if(transform.position.x >= -7.5f){
-                transform.position += new Vector3(-0.01f, 0f, 0f);
+                transform.position += new Vector3(-0.1f, 0f, 0f);
             }
         }
     }
