@@ -60,6 +60,20 @@ Node* _delete(Node* head, Node* pre){
     return head;
 }
 
+void find_num_to_node(Node *head){
+    int find = 0;
+    printf("탐색할 값을 입력하시오: ");
+    scanf("%d", &find);
+    Node *p = head;
+    int count = 0;
+    for(p ; p != NULL ; p=p->link){
+        if(p->data == find)
+            count++;
+    }
+    printf("%d는 연결 리스트에서 %d번 나타납니다.", find, count);
+    free(p);
+}
+
 int main() {
     Node* A = NULL;
     int n = 0;
@@ -78,16 +92,8 @@ int main() {
         A = insert_f(A, num[i+1]);
     }
     ////////////////////////////
-    int find = 0;
-    printf("탐색할 값을 입력하시오: ");
-    scanf("%d", &find);
-    Node *p = A;
-    int count = 0;
-    for(p ; p != NULL ; p=p->link){
-        if(p->data == find)
-            count++;
-    }
-    printf("%d는 연결 리스트에서 %d번 나타납니다.", find, count);
+    
+    find_num_to_node(A);
     ////////////////////////////
     return 0;
 }
