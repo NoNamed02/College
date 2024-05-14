@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct Node{
+    int data;
+    struct Node *link;
+}Node;
+
+Node* insert_f(Node* head, int v){
+    Node* p = (Node*)malloc(sizeof(Node));
+    p->data = v;
+    p->link = head;
+    head = p;
+}
+
+void find_MM(Node* head){
+    int min = head->data;
+    int max = head->data;
+    Node *p = head;
+    while(p->link != NULL){
+        if(p->data >= max )
+            max = p->data;
+        if(p->data <= min)
+            min = p->data;
+        p = p-> link;
+    }
+    printf("최솟값 %d\n", min);
+    printf("최댓값 %d\n", max);
+}
+
+int main(void){
+    Node * head = (Node*)malloc(sizeof(Node));
+    head->data = 3;
+    head = insert_f(head, 2);
+    head = insert_f(head, 1);
+    head = insert_f(head, 10);
+    find_MM(head);
+    return 0;
+}
+
+
+
+
+
+
