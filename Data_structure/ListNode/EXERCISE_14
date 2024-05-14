@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Node{
+    char name[20];
+    int age;
+    float heigh;
+    struct Node *link;
+}Node;
+
+Node* insert_last(Node* head, char N[], int a, float h){
+    Node* p = head;
+    while(p->link!=NULL){
+        p=p->link;
+    }
+    Node* p2 = (Node*)malloc(sizeof(Node));
+    strcpy(p2->name, N);
+    p2->age = a;
+    p2->heigh = h;
+    p2->link = NULL;
+    p->link = p2;
+    return head;
+}
+
+void print(Node * head){
+    Node* p = head;
+    while (p != NULL) {
+        printf("%s\n", p->name);
+        printf("%d\n", p->age);
+        printf("%f\n", p->heigh);
+        printf("\n");
+        p = p->link;
+    }
+}
+
+int main(void){
+    Node *head = (Node*)malloc(sizeof(Node));
+    strcpy(head->name, "kim");
+    head->age = 34;
+    head->heigh = 1.7f;
+    //head = insert_last(head, "kim", 34, 1.7f);
+    head = insert_last(head,"park", 27, 1.4f);
+    
+    //이하 생략
+    
+    print(head);
+    //print(head->link);
+    
+    return 0;
+}
