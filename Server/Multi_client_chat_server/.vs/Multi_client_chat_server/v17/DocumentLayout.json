@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{656E4B4B-037B-4515-BE39-9E0FC15D39D2}|Server_3\\Server_3.csproj|C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\server_3\\server3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656E4B4B-037B-4515-BE39-9E0FC15D39D2}|Server_3\\Server_3.csproj|solutionrelative:server_3\\server3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F46412F-3FD7-4D80-98AE-15E30E50C46D}|Client_3\\Client_3.csproj|c:\\users\\yuka\\desktop\\server\\multi_client_chat_server\\client_3\\client3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F46412F-3FD7-4D80-98AE-15E30E50C46D}|Client_3\\Client_3.csproj|solutionrelative:client_3\\client3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38C97E3D-9FDB-4FA8-A405-AAFE319DED56}|Multi_client_chat_server\\Multi_client_chat_server.csproj|C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\multi_client_chat_server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38C97E3D-9FDB-4FA8-A405-AAFE319DED56}|Multi_client_chat_server\\Multi_client_chat_server.csproj|solutionrelative:multi_client_chat_server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0E7EE9-0332-4B51-813E-84D030678D3C}|Client_3ex\\Client_3ex.csproj|C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\client_3ex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0E7EE9-0332-4B51-813E-84D030678D3C}|Client_3ex\\Client_3ex.csproj|solutionrelative:client_3ex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Server3.cs",
+              "DocumentMoniker": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Server_3\\Server3.cs",
+              "RelativeDocumentMoniker": "Server_3\\Server3.cs",
+              "ToolTip": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Server_3\\Server3.cs",
+              "RelativeToolTip": "Server_3\\Server3.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAcwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:33:59.514Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client3.cs",
+              "DocumentMoniker": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Client_3\\Client3.cs",
+              "RelativeDocumentMoniker": "Client_3\\Client3.cs",
+              "ToolTip": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Client_3\\Client3.cs",
+              "RelativeToolTip": "Client_3\\Client3.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAmwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:17:02.113Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Client_3ex\\Program.cs",
+              "RelativeDocumentMoniker": "Client_3ex\\Program.cs",
+              "ToolTip": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Client_3ex\\Program.cs",
+              "RelativeToolTip": "Client_3ex\\Program.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswDsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:34:40.915Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Multi_client_chat_server\\Server.cs",
+              "RelativeDocumentMoniker": "Multi_client_chat_server\\Server.cs",
+              "ToolTip": "C:\\Users\\Yuka\\Desktop\\Server\\Multi_client_chat_server\\Multi_client_chat_server\\Server.cs",
+              "RelativeToolTip": "Multi_client_chat_server\\Server.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wBYAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T13:20:32.928Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
